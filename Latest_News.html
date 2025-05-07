@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The NewYork Times</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@600&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 19px;
+            line-height: 1.7;
+            color: black;
+            font-family: 'Ysabeau Infant', sans-serif;
+            background-color: #abc5d4;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .bottomlinks ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .news img,
+        .sidebar img {
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .articlecontent {
+            padding: 1rem;
+        }
+
+        .article {
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+            background-color: white;
+        }
+
+        .pins {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background-color: white;
+        }
+
+        .footer {
+            /* background-color: rgba(161, 187, 214, 0.96); */
+            color: black;
+        }
+
+        .footer .bottomlinks {
+            text-align: left;
+        }
+
+        .header {
+            background-color: rgb(192, 216, 227);
+            margin-bottom: 1rem;
+
+        }
+
+        img {
+            max-width: 100%;
+            /* to make all images responsive */
+        }
+
+        /************************** flex box ***************************/
+
+        .container {
+            display: flex;
+            color: black;
+        }
+
+        .head_h1_h6 {
+            color: black;
+        }
+
+        .header {
+            box-sizing: border-box;
+            /*width including margins paddings */
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        .footer {
+            color: white;
+            background-color: black;
+            box-sizing: border-box;
+            width: 100%;
+            /* so that header n footer are 100 % wide */
+        }
+
+        .footer {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /* so that automatically equal spaces is arranged between the links*/
+        }
+
+        .news {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: #abc5d4;
+
+            /* background-color: #8c9ca5; */
+        }
+
+        /****************** media queries *********************/
+        /******************** mobiles *****************************/
+        @media screen and (max-width: 520px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
+        /****************************** tablets **************************/
+        @media screen and (min-width: 521px) and (max-width: 830px) {
+            .container {
+                flex-wrap: wrap;
+            }
+
+            .news {
+                box-sizing: border-box;
+                flex: 3;
+                /* news occupies 2/3 of width n sidebar 1/3 of width */
+                margin-right: 1rem;
+            }
+
+            .sidebar {
+                box-sizing: border-box;
+                flex: 1;
+            }
+        }
+
+        /********************************** Desktops **************************/
+
+        @media screen and (min-width: 831px) {
+            .container {
+                flex-wrap: wrap;
+            }
+
+            .news {
+                box-sizing: border-box;
+                flex: 3;
+                /* news occupies 2/3 of width n sidebar 1/3 of width */
+                margin-right: 1rem;
+            }
+
+            .sidebar {
+                box-sizing: border-box;
+                flex: 1;
+            }
+
+            .big {
+                width: 100%;
+            }
+
+            .medium {
+                flex: 2;
+                /* so that 2 medium can lie side to side */
+            }
+
+            .small {
+                flex: 1;
+                /* so that three small lie side to side */
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="head_h1_h6">the News About "Save Earth" </h1>
+            <h6 class="head_h1_h6">12/01/2024 Friday</h6>
+        </div>
+        <div class="news">
+            <div class="article big">
+                <img src="img_news (1).jpeg" />
+                <div class="articlecontent">
+                    <h2>Direct Impact Or Nuclear Weapons? How To Save Earth From An Asteroid</h2>
+                    <br>
+                    <p> World News | Agence France-Presse | Monday September 26, 2022 </p> <br>
+                    <p>
+                        NASA's DART mission to test deflecting an asteroid using "kinetic impact" with a spaceship is
+                        just one way to defend planet Earth from an approaching object -- and for now, the only method
+                        possible with current technology.
+
+                    </p>
+                </div>
+            </div>
+            <div class="article medium">
+                <img src="img_news (1).jpg" />
+                <div class="articlecontent">
+                    <h2>US Throws Support Behind Environmental Treaty To Curb Plastic Pollution</h2>
+                    <br>
+                    <p>World News | Agence France-Presse | Thursday November 18, 2021 </p> <br>
+
+                    <p>
+                        The United States on Thursday threw its support behind negotiations on a treaty to curb plastic
+                        pollution, ending a key holdup in international efforts to clean up the planet's oceans and save
+                        marine life.
+                    </p>
+                </div>
+            </div>
+            <div class="article medium">
+                <img src="img_news (2).jpeg" />
+                <div class="articlecontent">
+                    <h2>As Autos Go Electric, Toyota Chases Hydrogen Dream</h2>
+                    <br>
+                    <p>Business | Reuters | Monday November 15, 2021 </p> <br>
+                    <p>
+                        As U.N. climate conference delegates considered how to save the planet over the weekend in
+                        Glasgow, Toyota Motor's chief executive was in Japan racing an experimental hydrogen car - a
+                        vehicle he says could preserve millions of auto jobs.
+                    </p>
+                </div>
+            </div>
+            <div class="article big">
+                <img src="img_news (2).jpg" />
+                <div class="articlecontent">
+                    <h2>"May God Save The Planet": Biden At Climate Summit</h2>
+                    <br>
+                    <p>World News | Agence France-Presse | Monday November 1, 2021 </p> <br>
+
+
+                    <p>
+                        US President Joe Biden told the COP26 climate summit Monday that the massive response needed to
+                        stop the climate crisis should be seen as an opportunity for the world's economies.
+                    </p>
+                </div>
+            </div>
+            <div class="article small">
+                <img src="img_news (3).jpeg" />
+                <div class="articlecontent">
+                    <h2>COP26: World Leaders Set To Meet In Bid To Avert Drastic Global Warming</h2>
+                    <br>
+                    <p> World News | Reuters | Sunday October 31, 2021 </p> <br>
+
+
+                    <p>
+                        World leaders will start descending on the Scottish city of Glasgow on Sunday for the United
+                        Nations COP26 summit, billed as a make-or-break chance to save the planet from the most
+                        calamitous effects of climate change.
+                    </p>
+                </div>
+            </div>
+            <div class="article small">
+                <img src="img_news (3).jpg" />
+                <div class="articlecontent">
+                    <h2>Meet The 11-Year-Old British Boy Who's Walking To Save The Earth</h2>
+                    <p> World News | Reuters | Friday August 13, 2021</p> <br>
+                    <p>
+                        Jude Walker, an 11-year-old boy, is on an odyssey he hopes will help save the planet: he is
+                        walking to London from northern England in a bid to garner support for a carbon tax to tackle
+                        carbon emissions.
+                    </p>
+                </div>
+            </div>
+            <div class="article small">
+                <img src="img_news (4).jpeg" />
+                <div class="articlecontent">
+                    <h2>How Tusshar Kapoor And Son Laksshya Are "Making A Small Change For Our Planet"</h2>
+                    <br>
+                    <p>Entertainment | Written by Shrinkhala Sharma | Thursday March 5, 2020 </p> <br>
+                    <p>
+                        In the picture, Tusshar Kapoor can been seen reading a bedtime story to his son Laksshya
+                    </p>
+                </div>
+            </div>
+            <div class="article big">
+                <img src="img_news (4).jpg" />
+                <div class="articlecontent">
+                    <h2>
+                        Elon Musk Releases All Tesla Patents in Bid to Save the Planet</h2>
+
+                    <br>
+                    <p> Agence France-Presse | Friday February 1, 2019</p> <br>
+                    <p>
+                        Musk promised Tesla "will not initiate patent lawsuits against anyone who, in good faith, wants
+                        to use our technology."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="pins">
+                <h2>India</h2>
+                <img src="img_news (5).jpg" />
+                <p>A Global Diet May Help Improve Health And Save Planet, Says Study</p>
+                <br>
+                <p>Food | Deeksha Sarin | Friday January 18, 2019 </p> <br>
+                <p> According to a recent study, published in the medical journal The Lancet, an international team of
+                    scientists are developing a global diet that may help improve one's health and also save the planet
+                    at the same time.</p>
+            </div>
+            <div class="pins">
+                <h2>Cricket</h2>
+                <img src="img_news (6).jpg" />
+                <p>
+                    In Denmark, Even Crematoriums Want To Save Planet
+                </p> <br>
+                <p> World News | Agence France-Presse | Saturday December 1, 2018</p> <br>
+                <p> In Denmark's second city Aarhus, even the crematorium is doing what it can to go carbon neutral, in
+                    a country that ambitiously aims to be fossil free by 2050.</p>
+            </div>
+            <div class="pins">
+                <h2>'There Is No Planet B', Tweets Sachin Tendulkar On World Environment Day</h2>
+                <br>
+                <p> Written by Samrat Chakraborty | Tuesday June 5, 2018 </p> <br>
+                <img src="img_news (7).jpg" />
+                <p>Cricket legend Sachin Tendulkar, on occasion of World Environment Day, appealed the world to save
+                    their planet.</p>
+            </div>
+
+
+            <div class="pins">
+                <h2>
+                    11 Earth Day Tips To Make Our Planet A Better Place</h2>
+                <br>
+                <p> Offbeat | Written by Sanya Jain | Saturday April 22, 2017</p> <br>
+                <img
+                    src="https://as2.ftcdn.net/v2/jpg/05/43/84/03/1000_F_543840390_qy93GEzpYOZvmZOMvzgBZQkNnLcFbKsY.jpg " />
+                <p>
+                    Today, as we celebrate Earth Day 2017, let's take a moment to think about what we can actually do to
+                    help save the planet.
+                </p>
+            </div>
+            <div class="pins">
+                <h2>War For The Planet Of The Apes Trailer Is Darker Than Ever</h2>
+                <br>
+                <p>Entertainment | Written by Nilanjana Basu | Friday March 31, 2017</p> <br>
+                <img src="img_news (8).jpg" />
+                <p>
+                    War For The Planet Of The Apes Trailer: A determined and revengeful Woody Harrelson is the Colonel,
+                    who headlines the mission to bring the genetically modified ape down. Part of his motivational
+                    speech says: "There are times when it's necessary to abandon our humanity, to save humanity."
+                </p>
+            </div>
+
+            <div class="pins">
+                <h2>Barack Obama Calls Paris Climate Pact 'Best Chance' To Save The Planet</h2>
+                <br>
+                <p>World News | Reuters | Sunday December 13, 2015</p> <br>
+                <img src="img_news (9).jpg" />
+                <p>
+                    US President Barack Obama on Saturday hailed the landmark climate accord reached in Paris as strong
+                    and historic, calling it the best chance to save the planet from the effects of global climate
+                    change.
+                </p>
+            </div>
+
+            <div class="pins">
+                <h2>Barack Obama Says World Has 'Met The Moment' With Climate Pact</h2>
+                <br>
+                <p> World News | Associated Press | Sunday December 13, 2015</p> <br>
+                <img src="img_news (10).jpg" />
+                <p>
+                    President Barack Obama said the new global climate agreement "offers the best chance we have to save
+                    the one planet we have" and credited his administration as being a driving force behind the deal.
+                </p>
+            </div>
+            <div class="pins">
+                <h2>India and France Look To the Sun to Save the Planet</h2> <br>
+                <p> India News | Reuters | Tuesday December 1, 2015 </p> <br>
+                <img src="img_news (11).jpg" />
+                <p>
+                    India and France on Monday launched an international alliance seeking to mobilise more than a
+                    trillion dollars by 2030 and deliver clean, solar energy to some of the planet's poorest.
+                </p>
+            </div>
+            <div class="pins">
+                <h2>It's Time to Go Green: Save the Planet and Money Too</h2>
+                <br>
+                <p> Written by ShriramS | Tuesday November 17, 2015 </p> <br>
+                <img src="img_news (12).jpg" />
+                <p>
+                    Sustainability experts share their hands-on experience on making your personal habitat greener,
+                    reducing reliance on grid power, water, and landfills.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- <div class="footer">
+            <div class="bottomlinks">
+                <h4>Politics</h4>
+                <ul>
+                    <li><a href="#">Congress</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">The nine</a></li>
+                    <li><a href="#">Trumpmerica</a></li>
+                    <li><a href="#">State</a></li>
+                </ul>
+            </div>
+            <div class="bottomlinks">
+                <h4>Entertainment</h4>
+                <ul>
+                    <li><a href="#">Star</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Screen</a></li>
+                    <li><a href="#">Culture</a></li>
+                </ul>
+            </div>
+            <div class="bottomlinks">
+                <h4>Technology</h4>
+                <ul>
+                    <li><a href="#">Startup</a></li>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Future</a></li>
+                    <li><a href="#">Gadget</a></li>
+                    <li><a href="#">Bussiness</a></li>
+                </ul>
+            </div>
+        </div> -->
+
+
+    </div>
+
+
+
+</body>
+
+</html>
